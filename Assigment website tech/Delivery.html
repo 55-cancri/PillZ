@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Website</title>
+    <style>
+        /* Style for the slider container */
+        .slider-container {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        /* Style for the slider input element */
+        input[type="range"] {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Style for the text box to display the value */
+        #slider-value {
+            font-size: 50px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="cargo ship.jpg" height="600px" width="100%" class="imgtwo">
+  <div class="more"></div>
+  <div class="evenmore"></div>
+  <div class="thatstoomuch"></div>
+  <div class="bottombar"></div>
+  <img src="pillz.gif" height="62.5px" width="120px" id="titleimg">
+    <table>
+      <tr>
+        <th class="num0"></th>
+        <th id="num1"><a href="index.html">Homepage</a></th>
+        <th id="num2"><a href="aboutus.html">About us</a></th>
+        <th id="num3"><a href="Deals.html">Deals</a></th>
+      </tr>
+    </table>
+<div class="squaretwo"></div>
+<br>
+<br>
+<strong><p class="imgtxt">Our transportation methods allows us to deliver our product to everywhere in Australia,<br><br>ranging from ships, trucks, and stores.<br><br>
+Our methods of transportation also limit the amounts of carbon dioxide blown into the air.</p></strong>
+<h1 class="aboutpillZfour">HOW ARE WE ENVIRONMENTALLY FRIENDLY?</h1>
+<p class="aboutpillZtwo">
+<!--This is where text goes                                                Preferably put <br> here-->
+How are our ships environmentally friendly?<br>
+Our cargo ships operate at a low speed while delivering products to the ship's limit, leading<br>
+to less carbon emmisions per kilometere. We are also thinking about imputing designs that<br>
+are 100% environmentally friendly with zero emissions from other carbon ship designs.<br>
+How do we deliver on ground?<br>
+<!--Text insert here-->We deliver through cars, trucks and sometimes bicycles (to be<br>
+more enviromentally friendly) from your local chemist to your home.
+<br>
+<!--This is where text ends-->
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="slider-container">
+        <input type="range" min="200" max="800" value="500" id="slider" step="100">
+        <div id="slider-valueone">100</div>
+        <div id="slider-valuetwo">100</div>
+    </div>
+
+    <script>
+        // Get the slider element and the text box element
+        const slider = document.getElementById("slider");
+        const sliderValueone = document.getElementById("slider-valueone");
+        const sliderValuetwo = document.getElementById("slider-valuetwo");
+        // Update the text box with the current slider value
+        
+        sliderValueone.textContent = `${slider.value}mg in total(${slider.value / 20} pills).`;
+        sliderValuetwo.textContent = `$${slider.value / 10}AUD`;
+
+        // Add an event listener to update the text box when the slider value changes
+        slider.addEventListener("input", function() {
+            sliderValueone.textContent = `${slider.value}mg in total(${slider.value / 20} pills).`;
+            sliderValuetwo.textContent = `$${slider.value / 10}AUD`;
+        });
+    </script>
+    <select id="Location" class="rounded-input" name="Location">
+        <!--Used ChatGPT for this part as not bothered to type out repetitive coding-->
+        <option value="sydney">Sydney, NSW</option>
+        <option value="melbourne">Melbourne, VIC</option>
+        <option value="brisbane">Brisbane, QLD</option>
+        <option value="perth">Perth, WA</option>
+        <option value="adelaide">Adelaide, SA</option>
+        <option value="gold_coast">Gold Coast, QLD</option>
+        <option value="newcastle">Newcastle, NSW</option>
+        <option value="canberra">Canberra, ACT</option>
+        <option value="sunshine_coast">Sunshine Coast, QLD</option>
+        <option value="wollongong">Wollongong, NSW</option>
+        <option value="geelong">Geelong, VIC</option>
+        <option value="hobart">Hobart, TAS</option>
+        <option value="townsville">Townsville, QLD</option>
+        <option value="cairns">Cairns, QLD</option>
+        <option value="toowoomba">Toowoomba, QLD</option>
+        <option value="darwin">Darwin, NT</option>
+        <option value="ballarat">Ballarat, VIC</option>
+        <option value="bendigo">Bendigo, VIC</option>
+        <option value="albury">Albury, NSW</option>
+        <option value="launceston">Launceston, TAS</option>
+        <option value="rockhampton">Rockhampton, QLD</option>
+        <option value="mackay">Mackay, QLD</option>
+        <option value="coffs_harbor">Coffs Harbour, NSW</option>
+        <option value="hervey_bay">Hervey Bay, QLD</option>
+        <option value="mildura">Mildura, VIC</option>
+        <option value="kalgoorlie">Kalgoorlie, WA</option>
+        <option value="warrnambool">Warrnambool, VIC</option>
+        <option value="tamworth">Tamworth, NSW</option>
+        <option value="gawler">Gawler, SA</option>
+        <option value="orange">Orange, NSW</option>
+        <option value="dubbo">Dubbo, NSW</option>
+        <option value="nowra">Nowra, NSW</option>
+        <option value="bathurst">Bathurst, NSW</option>
+        <option value="warragul">Warragul, VIC</option>
+        <option value="geraldton">Geraldton, WA</option>
+        <option value="albany">Albany, WA</option>
+        <option value="goulburn">Goulburn, NSW</option>
+        <option value="broome">Broome, WA</option>
+        <option value="kalbarri">Kalbarri, WA</option>
+        <option value="cessnock">Cessnock, NSW</option>
+        <option value="port_macquarie">Port Macquarie, NSW</option>
+        <option value="forster">Forster, NSW</option>
+        <option value="burnie">Burnie, TAS</option>
+        <option value="devonport">Devonport, TAS</option>
+        <option value="horsham">Horsham, VIC</option>
+        <option value="port_hedland">Port Hedland, WA</option>
+    </select>
+    <br>
+    <br>
+    <input type="text" class="rounded-input" id="Location" name="Location" placeholder="Type postcode here...">
+    <br>
+    <br>
+    <input type="text" class="those" id="Those" name="Those" placeholder="Any complaints or feedback? Please tell us...">
+    <a href="thanks.html"><button class="buttonhe">ORDER</button></a>
+    <div class="square"></div>
+<br>
+<br>
+<br>
+<div class="michaelcrvelin"></div>
+<p class="michaelcrvelintwo">If you have any additional questions, contact us at 0401457824
+</p>
+<img src="spooderman.png" class="michaelcrvelinthree" width="60px" height="100px">
+</body>
+</html>
